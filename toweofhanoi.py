@@ -10,6 +10,9 @@ rods = {
 #THe function below will pass the data type of the key 'A'.
 #the syntax is dictonaryvariable[key]
 
+def make_allowed_move(rod1, rod2):
+    pass
+
 def move(n, source, auxiliary, target):
     # display starting configuration
     print(rods)
@@ -32,6 +35,9 @@ def move(n, source, auxiliary, target):
             else:
                 print(f'Moving disk {rods[target][-1]} from {target} to {source}')
                 rods[source].append(rods[target].pop())
+            
+            # display our progress
+            print(rods)
                 
 # initiate call from source A to target C with auxiliary B
 move(NUMBER_OF_DISKS, 'A', 'B', 'C')
